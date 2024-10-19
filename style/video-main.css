@@ -1,0 +1,170 @@
+body{
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+.flex-main{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	box-sizing: border-box;
+	column-gap: 8px;
+	row-gap: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.video-main{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	/* max-width: 240px; */
+	/* max-height: 280px; */
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+/* @media screen (max-width 600px) */
+
+.thumbnail{
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.picture{
+	position: relative;
+	width: 100%;
+	/* max-width: 240px; */
+}
+
+.playtime{
+	position: absolute;
+	background-color: black;
+	color: white;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 12px;
+	padding: 3px 5px 3px 5px;
+	border-radius: 2px;
+	right: 5px;
+	bottom: 10px;
+}
+
+.video-profile{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+.pro-pic{
+	width: 26px;
+	height: 26px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	/* margin-top: 12px; */
+	margin-right: 8px;
+	/* position: relative; */
+}
+
+p{
+	font-family: Roboto, Arial, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.video-text{
+	display: flex;
+	flex-direction: column;
+	margin-top: 12px;
+	width: 100%;
+	min-width: 180px;
+	/* max-width: 240px; */
+}
+
+a{
+	font-family: Roboto, Arial;
+}
+
+.caption{
+	font-size: 14px;
+	color: black;
+	font-weight: 500;
+	line-height: 20px;
+	box-sizing: border-box;
+	text-decoration-line: underline;
+	text-decoration-style: solid ;
+	text-decoration-thickness: auto;
+}
+
+.cha-name{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	color: rgb(96, 96, 96);
+	box-sizing: border-box;
+	text-decoration-color: rgb(96, 96, 96);
+	text-decoration-line: underline;
+	text-decoration-style: solid ;
+	text-decoration-thickness: auto;
+}
+
+.view{
+	font-size: 12px;
+	color: rgb(96, 96, 96);
+	box-sizing: border-box;
+	font-weight: 400;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+
+.tool-pic{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background-color: gray;
+	margin-top: 12px;
+	margin-right: 8px;
+}
+
+.tool-pic .tooltips{
+	position: absolute;
+	background-color: white;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 100;
+	display: flex;
+	width: 200px;
+	height: 60px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px #888888;
+	transition: opacity 0.15s;
+}
+
+.tooltips .pro-pic{
+	width: 40px;
+	height: 40px;
+}
+
+.tooltips .fir{
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 8px;
+}
+
+.tooltips .sec{
+	margin-top: 5px;
+	margin-left: 8px;
+	font-size: 12px;
+	color: rgb(96, 96, 96);
+}
+.tool-pic:hover .tooltips{
+	opacity: 1;
+}

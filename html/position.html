@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			CSS Position
+		</title>
+		<style>
+			body{
+				padding-left: 100px;
+				margin-bottom: 10000px;
+			}
+			.right{
+				background-color: green;
+				position: fixed;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 100px;
+			}
+			.hello{
+				background-color: blue;
+				display: inline-block;
+				height: 100px;
+				width: 100px;
+				color: white;
+				padding-top: 50px;
+			}
+			.nth{
+				top:0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				position: fixed;
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			.modal{
+				background-color: white;
+				display: flex;
+				width: 200px;
+				height: 110px;
+				flex-direction: column;
+				padding-bottom: 10px;
+				position: fixed;
+				top: 200px;
+				left: 200px;
+				right: 180px;
+				bottom: 200px;
+				padding-left: 10px;
+				border-radius: 8px;
+			}
+			p{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="right">
+			right sidebar
+		</div>
+		<div class="hello">
+			Hello
+		</div>
+		<div class="nth">
+			<div class="modal">
+				<div>
+					<p style="
+						font-family: Arial;
+						font-size: large;
+						font-weight: bold;
+						margin-top: 20px">
+						Modal Title
+					</p>
+				</div>
+				<div>
+					<p style="font-family: Arial;
+					font-size: small;
+					margin-top: 10px;
+					margin-bottom: 10px;">
+						This is a modal
+					</p>
+				</div>
+				<div>
+					<button>
+						Close
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

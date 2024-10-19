@@ -1,0 +1,81 @@
+<title>
+	Go to Google
+</title>
+<style>
+	.amazon{
+		color: rgb(0, 113, 133);
+		transition: color 0.15s;
+		cursor: pointer;
+	}
+	.amazon:hover{
+		color: rgb(99, 45, 186);
+	}
+	.add_to_cart{
+		color: black;
+		background-color: rgb(255, 216, 20);
+		border: none;
+		cursor: pointer;
+		height: 36px;
+		width: 120px;
+		border-radius: 18px;
+		margin-right: 8px;
+		transition: box-shadow 0.15s, opacity 0.15s;
+	}
+	.add_to_cart:hover{
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	}
+	.add_to_cart:active{
+		opacity: 0.7;
+	}
+	.buy_now{
+		background-color: rgb(255, 164, 28);
+		height: 36px;
+		width: 115px;
+		border: none;
+		border-radius: 18px;
+		cursor: pointer;
+		transition: background-color 0.15s, 
+			border 0.15s, color 0.15s;
+	}
+	.buy_now:hover{
+		background-color: white;
+		border: 1px solid rgb(255, 164, 28);
+	}
+	.buy_now:active{
+		background-color: black;
+		border: none;
+		color: rgb(255, 164, 28);
+	}
+	.dollar{
+		color: rgb(0, 118, 0);
+		font-size: large;
+	}
+	.nike{
+		font-size: larger;
+		font-weight: bold;
+	}
+</style>
+<body>
+	<a href = "https://www.google.com/" target="_blank" >
+		Search with Google
+	</a> <br>
+	
+	<a href="https://www.amazon.com/" target="_blank" class="amazon">
+		Back to Amazon
+	</a>
+	<p class="nike">
+		Nike Black Running Shoes 
+	</p>
+	<p class="dollar">
+		$39 - in stock.
+	</p>
+	<p>
+		Free delivery tomorrow.
+	</p>
+	<button class="add_to_cart">
+		Add to Cart
+	</button>
+	<button class="buy_now">
+		Buy now
+	</button>
+</body>

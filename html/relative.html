@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Position-relative
+		</title>
+		<style>
+			body{
+				height: 3000px;
+			}
+			.close{
+				font-family: Arial;
+				background-color: black;
+				color: white;
+				width: 20px;
+				height: 20px;
+				border-radius: 20px;
+				text-align: center;
+				position: absolute;
+				top: -10px;
+				left: -10px;
+			}
+			.box{
+				width: 320px;
+				height: 180px;
+				background-color: gray;
+				position: fixed;
+				bottom: 30px;
+				right: 30px;
+			}
+			.second{
+				color: white;
+				background-color: black;
+				font-family: arial;
+				font-size: 12px;
+				display: inline-block;
+				padding-right: 10px;
+				padding-left: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+			.image{
+				object-fit: cover;
+				width: 150px;
+				height: 200px;
+				object-position: center;
+
+			}
+			.good{
+				display: inline-block;
+				position: relative;
+			}
+			.off{
+				display: inline-block;
+				padding-left: 8px;
+				padding-right: 8px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				color: black;
+				background-color: white;
+				font-size: 12px;
+				font-family: Arial;
+				position: absolute;
+				top: 5px;
+				right: 0;
+			}
+			.blur{
+				width: 150px;
+				height: 50px;
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				vertical-align: middle;
+				justify-content: center;
+				bottom: 0;
+				background-color: rgba(49, 49, 49, 0.728);
+			}
+			.butt{
+				/* border: none; */
+				border: 1px solid black;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 8px;
+				padding-right: 8px;
+				font-size: 12px;
+
+				cursor: pointer;
+				transition: color 0.15s,
+				background-color 0.15s;
+			}
+			.butt:hover{
+				background-color: black;
+				color: white;
+			}
+			.butt:active{
+				color: rgb(203, 195, 195);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box">
+			<div class="close">
+				x
+			</div>
+			<div class="second">
+				0:29
+			</div>
+		</div>
+		<div>
+			<div class="good">
+				<img src="images/cat.jpg" class="image">
+				<div class="off">
+					20% OFF
+				</div>
+				<div>
+					<div class="blur">
+						<button class="butt">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

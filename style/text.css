@@ -1,0 +1,66 @@
+p {
+	font-family: Montserrat;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.freeCodeCamp{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.at{
+	color: grey;
+	font-weight: normal;
+}
+.web{
+	width: 500px;
+	margin-bottom: 20px;
+}
+.here{
+	width: 500px;
+	margin-bottom: 50px;
+}
+.chpit{
+	color: rgb(0, 140, 255);
+	cursor: pointer;
+	text-decoration: none;
+
+}
+.chpit:hover{
+	text-decoration: underline;
+}
+.padding{
+	width: 500px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.shop{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+.shop:hover{
+	text-decoration: none;
+}
+#BUY{
+	margin-top: 50px;
+	margin-left: 230px;
+	border: none;
+	background-color: rgb(2, 81, 250);
+	color: white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 16px;
+	font-family: Arial;
+	cursor: pointer;
+}
+#BUY:hover{
+	opacity: 0.8;
+}
+#BUY:active{
+	opacity: 0.6;
+}
